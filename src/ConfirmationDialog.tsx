@@ -13,12 +13,12 @@ const NavConfirmationDialog: FC<CustomConfirmationDialogProps> = ({ when }) => {
     state === "blocked" && (
       <div className="modal-overlay">
         <div className="modal-dialog">
-          <h2 className="modal-title">Confirmation</h2>
+          <h2 className="modal-title">Discard Changes?</h2>
           <p className="modal-message">
-            Are you sure you want to leave? You have unsaved changes.
+            You have unsaved changes. Are you sure you want to leave?
           </p>
           <div className="modal-button-container">
-            <button onClick={proceed} className="modal-button">
+            <button onClick={proceed} className="modal-button confirm-button">
               Confirm
             </button>
             <button onClick={reset} className="modal-button">

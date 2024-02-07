@@ -17,8 +17,13 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
+.modal-title {
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
 .modal-message {
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 .modal-button-container {
@@ -28,4 +33,13 @@
 
 .modal-button {
   margin-left: 10px;
+}
+
+.confirm-button {
+  background-color: red;
+  color: white;
+}
+
+.confirm-button:hover {
+  border-color: red;
 }

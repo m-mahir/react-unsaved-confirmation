@@ -7,7 +7,6 @@ import {
 import NavBar from "./NavBar";
 import Home from "./Home";
 import Form from "./Form";
-import "./App.css";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
