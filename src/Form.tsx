@@ -30,7 +30,7 @@ const Form: FC = () => {
           <form onSubmit={handleSubmit}>
             <div className="form-group">
               <label htmlFor="userInput" className="form-label">
-                Input:
+                Input
               </label>
               <input
                 type="text"
