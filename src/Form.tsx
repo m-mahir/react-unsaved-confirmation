@@ -24,30 +24,32 @@ const Form: FC = () => {
     <>
       <NavConfirmationDialog when={!!input} />
 
-      <div className="form-container">
-        <h1 className="form-title">Form</h1>
-        <form onSubmit={handleSubmit}>
-          <div className="form-group">
-            <label htmlFor="userInput" className="form-label">
-              Input:
-            </label>
-            <input
-              type="text"
-              id="userInput"
-              name="userInput"
-              value={input}
-              onChange={handleChange}
-              className="form-input"
-              placeholder="Enter your data"
-            />
-          </div>
-          <button type="submit" className="form-button">
-            Submit
+      <div className="container">
+        <div className="form-container">
+          <h1 className="form-title">Form</h1>
+          <form onSubmit={handleSubmit}>
+            <div className="form-group">
+              <label htmlFor="userInput" className="form-label">
+                Input:
+              </label>
+              <input
+                type="text"
+                id="userInput"
+                name="userInput"
+                value={input}
+                onChange={handleChange}
+                className="form-input"
+                placeholder="Enter your data"
+              />
+            </div>
+            <button type="submit" className="form-button">
+              Submit
+            </button>
+          </form>
+          <button onClick={handleNavigate} className="form-button">
+            Go to Home
           </button>
-        </form>
-        <button onClick={handleNavigate} className="form-button">
-          Go to Home
-        </button>
+        </div>
       </div>
     </>
   );

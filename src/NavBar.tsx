@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { Link, Outlet } from "react-router-dom";
+import { NavLink, Outlet } from "react-router-dom";
 import "./NavBar.css";
 
 const NavBar: FC = () => {
@@ -8,10 +8,15 @@ const NavBar: FC = () => {
       <nav className="top-nav-bar">
         <ul>
           <li>
-            <Link to="/">Home</Link>
+            <NavLink
+              to="/"
+              className={({ isActive }) => (isActive ? "active" : "")}
+            >
+              Home
+            </NavLink>
           </li>
           <li>
-            <Link to="/form">Form</Link>
+            <NavLink to="/form">Form</NavLink>
           </li>
         </ul>
       </nav>
