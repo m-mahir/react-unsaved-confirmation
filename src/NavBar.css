@@ -14,12 +14,8 @@
   height: 50px;
 }
 
-.top-nav-bar li:last-child {
-  margin-right: 0;
-}
-
 .top-nav-bar a {
-  color: #fff;
+  color: white;
   text-decoration: none;
   font-size: 1.5rem;
   transition: background-color 0.3s, padding 0.3s;
